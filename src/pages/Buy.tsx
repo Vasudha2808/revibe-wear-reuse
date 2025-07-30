@@ -19,7 +19,7 @@ const Buy = () => {
     {
       id: 1,
       name: "Midnight Elegance",
-      price: 2499,
+      price: 899,
       category: "evening",
       image: "/placeholder.svg",
       description: "Luxurious evening gown with intricate beadwork",
@@ -28,7 +28,7 @@ const Buy = () => {
     {
       id: 2,
       name: "Royal Purple",
-      price: 1899,
+      price: 699,
       category: "formal",
       image: "/placeholder.svg",
       description: "Sophisticated formal dress for special occasions",
@@ -37,7 +37,7 @@ const Buy = () => {
     {
       id: 3,
       name: "Casual Chic",
-      price: 1299,
+      price: 499,
       category: "casual",
       image: "/placeholder.svg",
       description: "Comfortable yet stylish for everyday wear",
@@ -46,7 +46,7 @@ const Buy = () => {
     {
       id: 4,
       name: "Party Sparkle",
-      price: 2199,
+      price: 799,
       category: "party",
       image: "/placeholder.svg",
       description: "Stunning party dress with sequin details",
@@ -55,7 +55,7 @@ const Buy = () => {
     {
       id: 5,
       name: "Office Elite",
-      price: 1599,
+      price: 599,
       category: "formal",
       image: "/placeholder.svg",
       description: "Professional yet fashionable business attire",
