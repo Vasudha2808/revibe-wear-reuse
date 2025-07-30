@@ -19,7 +19,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="Luxury Fashion" 
+            alt="ReVibe Fashion" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90" />
@@ -30,7 +30,7 @@ const Index = () => {
             ReVibe
           </h1>
           <p className="text-xl md:text-2xl text-foreground/90 mb-8 leading-relaxed">
-            Premium Fashion Platform for Buying, Selling & Redesigning Luxury Dresses
+            Old Threads, New Stories - Your Fashion Platform for Buying, Selling & Redesigning
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             Transform your wardrobe with our curated collection, sell your preloved pieces, 
@@ -58,10 +58,10 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <ServiceCard
               title="Buy Premium Dresses"
-              description="Discover our curated collection of luxury dresses for every occasion. Choose from designer pieces with flexible payment options."
+              description="Discover our curated collection of dresses for every occasion. Choose from quality pieces with flexible payment options."
               image={buyImage}
               features={[
-                "Curated luxury collection",
+                "Curated quality collection",
                 "Online payment & COD options",
                 "Premium quality guarantee",
                 "Wide size range available"
@@ -130,7 +130,7 @@ const Index = () => {
                 <span className="text-2xl">💎</span>
               </div>
               <h3 className="text-xl font-semibold">Premium Designs</h3>
-              <p className="text-muted-foreground">Expert designers creating unique, luxury transformations</p>
+              <p className="text-muted-foreground">Expert designers creating unique, stylish transformations</p>
             </div>
             
             <div className="space-y-4">

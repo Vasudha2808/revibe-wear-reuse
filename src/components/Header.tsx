@@ -9,7 +9,7 @@ const Header = () => {
             <h1 className="text-2xl font-bold bg-gradient-luxury bg-clip-text text-transparent">
               ReVibe
             </h1>
-            <span className="text-xs text-muted-foreground">Premium Fashion</span>
+            <span className="text-xs text-muted-foreground">Old Threads, New Stories</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">

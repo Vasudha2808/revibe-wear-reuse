@@ -82,7 +82,7 @@ const Buy = () => {
             Premium Dress Collection
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover our curated selection of luxury dresses for every occasion
+            Discover our curated selection of dresses for every occasion
           </p>
         </div>
 
