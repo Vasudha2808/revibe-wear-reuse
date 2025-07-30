@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import Header from "@/components/Header";
+import { Sparkles, Heart, Zap, Star } from "lucide-react";
 import heroImage from "@/assets/hero-fashion.jpg";
 import buyImage from "@/assets/buy-section.jpg";
 import sellImage from "@/assets/sell-section.jpg";
@@ -26,32 +27,45 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-luxury bg-clip-text text-transparent">
+          <div className="animate-pulse mb-4">
+            <Sparkles className="w-12 h-12 text-accent mx-auto" />
+          </div>
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-luxury bg-clip-text text-transparent animate-pulse">
             ReVibe
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/90 mb-8 leading-relaxed">
-            Old Threads, New Stories - Your Fashion Platform for Buying, Selling & Redesigning
+          <p className="text-xl md:text-2xl text-foreground/90 mb-8 leading-relaxed font-medium">
+            ✨ Old Threads, New Stories ✨
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             Transform your wardrobe with our curated collection, sell your preloved pieces, 
             or redesign your favorites into something extraordinary.
           </p>
           
-          <Button variant="luxury" size="xl" className="shadow-luxury">
-            Explore Our Services
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="luxury" size="xl" className="shadow-luxury animate-bounce">
+              <Zap className="w-5 h-5 mr-2" />
+              Explore Our Services
+            </Button>
+            <Button variant="premium" size="xl" className="shadow-glow">
+              <Heart className="w-5 h-5 mr-2" />
+              Join the Community
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-gradient-to-br from-accent/10 via-transparent to-primary/10">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-foreground">
-              Choose Your Experience
+            <div className="flex justify-center mb-4">
+              <Star className="w-8 h-8 text-luxury animate-spin" />
+            </div>
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+              Choose Your Fashion Journey
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Whether you're looking to buy, sell, or transform, we have the perfect service for you
+              Whether you're looking to buy, sell, or transform, we have the perfect service for you ✨
             </p>
           </div>
 
@@ -102,42 +116,42 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 px-6 bg-card/30">
+      <section className="py-24 px-6 bg-gradient-to-r from-primary/5 via-accent/5 to-luxury/5">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-16 text-foreground">
-            Why Choose ReVibe?
+          <h2 className="text-4xl font-bold mb-16 bg-gradient-luxury bg-clip-text text-transparent">
+            Why Choose ReVibe? 💫
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-gradient-luxury rounded-full flex items-center justify-center mx-auto">
+            <div className="group space-y-4 p-6 rounded-xl bg-gradient-card hover:shadow-luxury transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-luxury rounded-full flex items-center justify-center mx-auto group-hover:animate-bounce">
                 <span className="text-2xl">🛡️</span>
               </div>
-              <h3 className="text-xl font-semibold">Quality Assured</h3>
+              <h3 className="text-xl font-semibold text-accent">Quality Assured</h3>
               <p className="text-muted-foreground">Every piece is carefully inspected for quality and authenticity</p>
             </div>
             
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-gradient-luxury rounded-full flex items-center justify-center mx-auto">
+            <div className="group space-y-4 p-6 rounded-xl bg-gradient-card hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto group-hover:animate-pulse">
                 <span className="text-2xl">🚚</span>
               </div>
-              <h3 className="text-xl font-semibold">Doorstep Service</h3>
+              <h3 className="text-xl font-semibold text-primary">Doorstep Service</h3>
               <p className="text-muted-foreground">Convenient pickup and delivery right to your door</p>
             </div>
             
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-gradient-luxury rounded-full flex items-center justify-center mx-auto">
+            <div className="group space-y-4 p-6 rounded-xl bg-gradient-card hover:shadow-luxury transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-luxury rounded-full flex items-center justify-center mx-auto group-hover:animate-spin">
                 <span className="text-2xl">💎</span>
               </div>
-              <h3 className="text-xl font-semibold">Premium Designs</h3>
+              <h3 className="text-xl font-semibold text-luxury">Premium Designs</h3>
               <p className="text-muted-foreground">Expert designers creating unique, stylish transformations</p>
             </div>
             
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-gradient-luxury rounded-full flex items-center justify-center mx-auto">
+            <div className="group space-y-4 p-6 rounded-xl bg-gradient-card hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto group-hover:animate-bounce">
                 <span className="text-2xl">💳</span>
               </div>
-              <h3 className="text-xl font-semibold">Flexible Payments</h3>
+              <h3 className="text-xl font-semibold text-secondary">Flexible Payments</h3>
               <p className="text-muted-foreground">Multiple payment options including COD and online payments</p>
             </div>
           </div>
